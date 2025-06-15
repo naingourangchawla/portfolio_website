@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/ba9c496edf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <canvas id="bg"></canvas>
+        <div id="overlay-image"></div>
+        <div class="container">
+            <nav>
+                <img src="images/nain (1).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h2>Hi, I'm <span>Nain Gourang Chawla</span></h2>
+                <h4><span class="typing-effect"></span></h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/passport_pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate Mechanical Engineering student at Vellore Institute of Technology. Bridging theory
+                        with
+                        hands-on
+                        practicality & actively engaged in collaborative design projects. Aspiring to innovate and
+                        contribute to the
+                        field of mechanical engineering while open to networking and opportunities. I am always eager to
+                        learn new tools
+                        and technologies, and to collaborate with other experts and stakeholders in the field. My goal
+                        is to
+                        use my creativity,
+                        expertise, and leadership to deliver high-quality and impactful solutions that meet the needs
+                        and
+                        expectations of
+                        our society.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('POR')">Positions of Responsibility</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skills-list">
+                            <div>
+                                <h2>Technical Drawing</h2>
+                                <p>Precision in creating mechanical drawings.</p>
+                            </div>
+                            <div>
+                                <h2>Manufacturing</h2>
+                                <p>Expertise in 3D Printing & Additive Manufacturing techniques.</p>
+                            </div>
+                            <div>
+                                <h2>CAD Design</h2>
+                                <p>SolidWorks, Fusion 360, AutoCAD.</p>
+                            </div>
+                            <div>
+                                <h2>Design for Manufacturing</h2>
+                                <p>(DFM)</p>
+                            </div>
+                            <div>
+                                <h2>Coding</h2>
+                                <p>Python, Java, Web Dev.</p>
+                            </div>
+                            <div>
+                                <h2>Database Management</h2>
+                                <p>Excel, MySQL.</p>
+                            </div>
+                            <div>
+                                <h2>Product Design & Visualization</h2>
+                                <p>Figma, Canva, Adobe Premiere Pro.</p>
+                            </div>
+                            <div>
+                                <h2>Problem Solving & Critical Thinking</h2>
+                                <p></p>
+                            </div>
+                            <div>
+                                <h2>Teamwork & Leadership</h2>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <div class="bookshelf">
+                            <div class="book">
+                                <p>
+                                    VIT, Vellore<br>
+                                    CGPA: 8.76 ( ~ Sem 6)<br>
+                                    2022 - 2026
+                                </p>
+                                <div class="cover">
+                                    <span class="cover-text">B.Tech Mechanical</span>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <p>
+                                    Meluha School<br>
+                                    CBSE<br>
+                                    Percentage: 89.2%<br>
+                                    2022
+                                </p>
+                                <div class="cover">
+                                    <span class="cover-text">Senior Secondary</span>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <p>
+                                    Pallavi Model School<br>
+                                    CBSE<br>
+                                    Percentage: 90.4%<br>
+                                    2020
+                                </p>
+                                <div class="cover">
+                                    <span class="cover-text">Matriculation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="POR">
+                        <div class="achievements-grid">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">
+                                    <i class="fa-solid fa-medal"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h3>Sports Captain</h3>
+                                    <p class="achievement-subtitle">High School</p>
+                                    <p>Led the school's sports initiatives, managed inter-house events, and promoted
+                                        athletic discipline and team spirit.</p>
+                                </div>
+                            </div>
+
+                            <div class="achievement-card">
+                                <div class="achievement-icon">
+                                    <i class="fa-solid fa-crown"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h3>Head Boy</h3>
+                                    <p class="achievement-subtitle">Senior Secondary</p>
+                                    <p>Represented the student body, coordinated school-wide activities, and maintained
+                                        communication between students and faculty.</p>
+                                </div>
+                            </div>
+
+                            <div class="achievement-card">
+                                <div class="achievement-icon">
+                                    <i class="fa-solid fa-bullhorn"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h3>Media & Management Lead</h3>
+                                    <p class="achievement-subtitle">Team RoverX | VIT Vellore</p>
+                                    <p>Directed media outreach, managed sponsorships, and oversaw team operations during
+                                        national and international robotics events.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------experience------------- -->
+
+        <div id="experience">
+            <div class="work-experience-section">
+                <h1 class="sub-title">Work Experience</h1>
+
+                <div id="timeline-container" class="timeline-container">
+                    <div id="timeline-progress" class="timeline-progress">
+                        <div id="timeline-progress-bar" class="timeline-progress-bar"></div>
+                    </div>
+
+                    <div class="timeline-item" data-duration="8">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <div>
+                                    <h3 class="experience-title">Project Intern Trainee</h3>
+                                    <p class="experience-company">Daimler India Comercial Vehicle</p>
+                                </div>
+                                <span class="experience-duration">May 2025 - July 2025</span>
+                            </div>
+                            <p class="experience-description">
+                                Reduced MBOM creation lead time by automating and optimizing the
+                                existing process. Learned the MBOM structure, its creation, and its importance in
+                                manufacturing. Automated manual tasks to streamline workflow and improve efficiency.
+                                Also designed the basic workflow and future scope for further automation to reduce
+                                lead time even more.
+
+
+                            </p>
+                            <div class="skills-used">
+                                <span class="skill-tag">VBA Scripting</span>
+                                <span class="skill-tag">MS Excel</span>
+                                <span class="skill-tag">Workflow Design</span>
+                                <span class="skill-tag">MBOM Knowledge</span>
+                                <span class="skill-tag">Efficiency Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-duration="8">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <div>
+                                    <h3 class="experience-title">Mechanical Design Intern</h3>
+                                    <p class="experience-company">XIBOTIX Pvt. Ltd.</p>
+                                </div>
+                                <span class="experience-duration">Nov 2024 - May 2025</span>
+                            </div>
+                            <p class="experience-description">
+                                Worked on advanced mechanical design projects of humanoid & rehab devices involving
+                                additive manufacturing
+                                technologies.
+                                Specializing in rapid prototyping workflows and optimizing 3D printing processes for
+                                both
+                                FDM
+                                and SLA technologies.
+                                Contributing to mechanical assembly processes and product development cycles.
+                            </p>
+                            <div class="skills-used">
+                                <span class="skill-tag">Mechanical Assembly</span>
+                                <span class="skill-tag">3D Printing</span>
+                                <span class="skill-tag">FDM</span>
+                                <span class="skill-tag">SLA</span>
+                                <span class="skill-tag">Rapid Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-duration="8">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <div>
+                                    <h3 class="experience-title">Media & Management Head</h3>
+                                    <p class="experience-company">Team RoverX</p>
+                                </div>
+                                <span class="experience-duration">Jul 2024 - Feb 2025</span>
+                            </div>
+                            <p class="experience-description">
+                                Leading media operations and management for the university's robotics rover team.
+                                Responsible for graphic design, video editing, and comprehensive operations management.
+                                Coordinating team activities, managing project timelines, and creating visual content
+                                for
+                                team
+                                promotion.
+                            </p>
+                            <div class="skills-used">
+                                <span class="skill-tag">Graphic Design</span>
+                                <span class="skill-tag">Video Editing</span>
+                                <span class="skill-tag">Operations Management</span>
+                                <span class="skill-tag">Team Leadership</span>
+                                <span class="skill-tag">Project Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-duration="2">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="experience-header">
+                                <div>
+                                    <h3 class="experience-title">HVAC Design Intern</h3>
+                                    <p class="experience-company">Enmac Systems Private Limited</p>
+                                </div>
+                                <span class="experience-duration">Jun 2024 - Jul 2024</span>
+                            </div>
+                            <p class="experience-description">
+                                Gained hands-on experience in HVAC system design and analysis during this intensive
+                                internship.
+                                Worked on residential and commercial HVAC projects, learning industry-standard design
+                                practices
+                                and contributing to system optimization and energy efficiency calculations.
+                            </p>
+                            <div class="skills-used">
+                                <span class="skill-tag">HVAC Design</span>
+                                <span class="skill-tag">System Analysis</span>
+                                <span class="skill-tag">Energy Efficiency</span>
+                                <span class="skill-tag">Automating Calculations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/7.1.png" alt="Robotic Glove">
+                        <div class="layer">
+                            <h3>Affordable Robotic Glove</h3>
+                            <p>Designed a low-cost, 3D-printable prosthetic glove with smart grip control for rehab use.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/abc.png" alt="HVAC Optimizer">
+                        <div class="layer">
+                            <h3>Lean HVAC Optimizer</h3>
+                            <p>Automated HVAC analysis with Python, real-time Excel logs, and lean-driven insights.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="#" class="btn">See more</a> -->
+            </div>
+        </div>
+
+        <!-- ----------------contact----------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>naingc654@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 9363728415</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://open.spotify.com/artist/6l9fu46ke7qgh8K8LBrEGU"><i
+                                    class="fa-brands fa-spotify"></i></a>
+                            <a href="https://www.linkedin.com/in/nain-chawla/"><i class="fa-brands fa-linkedin"></i></a>
+
+
+                        </div>
+                        <a href="images/my_cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p><i>Slightly over-engineered & proudly overcoded, where gears turn and scripts run.</i></p>
+                <p><i></i></p>
+                <p><i>- Nain Chawla</i></p>
+            </div>
+        </div>
+
+</body>
+
+</html>
