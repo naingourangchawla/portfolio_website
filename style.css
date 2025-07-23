@@ -131,31 +131,12 @@ nav ul li a:hover::after {
 
 .row {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.about-col-1 {
-    flex-basis: 35%;
-}
-
-.about-col-1 img {
-    width: 100%;
-    border-radius: 15px;
-    opacity: 0.8;
-    transition: all 0.3s ease;
-    /* smooth transition */
-}
-
-.about-col-1 img:hover {
-    box-shadow: 0 0 60px rgba(25, 189, 255, 0.9);
-    /* blue shadow */
-}
-
-
 .about-col-2 {
-    flex-basis: 60%;
+    flex-basis: 100%;
     min-height: 400px;
     /* Adjust this value based on the largest content */
 }
@@ -254,9 +235,10 @@ nav ul li a:hover::after {
 .bookshelf {
     display: flex;
     gap: 35px;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Aligns to left */
+    align-items: flex-start;     /* Optional: aligns tops of books */
     margin-top: 0px;
+    flex-wrap: wrap;             /* Optional: wraps if screen is small */
 }
 
 .book {
@@ -398,6 +380,21 @@ p {
     
     .achievement-content h3 {
         font-size: 18px;
+    }
+
+    .bookshelf {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-list {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1069,26 +1066,9 @@ nav .fas {
     .copyright {
         font-size: 14px;
     }
-}
 
-@media only screen and (max-width: 600px) {
     #overlay-image {
-        display: none !important;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .container {
-        padding: 10px 5vw;
+        display: none;
     }
 
-    .skills-list {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .skills-list div {
-        font-size: 10px;
-        min-height: 90px;
-    }
 }
